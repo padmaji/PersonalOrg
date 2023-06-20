@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="DataTable ">
+        <template if:true={acclst.data} >
+            <lightning-datatable key-field="id" data={acclst.data} columns={colm}></lightning-datatable>
+        </template>
+        <template if:true={acclst.error}>
+            {acclst.error}
+        </template>
+    </lightning-card>
+</template>

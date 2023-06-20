@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Lightning datatable">
+        <lightning-input type="text" label="Enter search text" onchange={ontxtchange}></lightning-input>
+    <lightning-datatable key-field="Id"
+    columns={colm} data={rp.data} ></lightning-datatable>
+       </lightning-card>
+</template>

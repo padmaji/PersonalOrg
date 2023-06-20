@@ -1,0 +1,331 @@
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-label {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.input-wrapper lightning-input {
+  flex-grow: 1;
+  padding-top: 10Px;
+}
+.tprogressbar{
+  margin-bottom: 285px;
+}
+.b{
+	display: inline-block;
+  width: 100px;
+  text-align: right;
+  
+}
+
+.radio_border{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 575px;
+             height: 100px;
+           margin-left: 20px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.envhybrid
+{
+	padding-left:20px ;
+}
+.envSaas
+{
+	padding-left:150px ;
+}
+.radio_border::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .radio_border::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+          
+            left: 0;
+            width: 15%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+
+.horizontal-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.checkbox-wrapper {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.radio_border_licensed{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 575px;
+             height: 100px;
+           margin-left: 20px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+       
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+
+
+.radio_border_licensed::before {
+  content: "";
+            position: absolute;top: 0;
+            left: 0;
+           width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .radio_border_licensed::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           left: 0;
+            width: 35%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+
+.paddingleftBaseCloudCores
+{
+  padding-left: 100px;
+  /* //text-align: right; */
+  word-wrap: normal;
+  /* width:60px*/
+} 
+.additionalBaseCloudCores
+{
+  
+  text-align: left;
+  
+   width: 20px; 
+  word-wrap: normal;
+  
+  
+
+  /* width: 60px; */
+  
+}
+.additionalBaseCloudCoresV2
+{
+  
+  /* text-align: right; */
+  padding-left: 40px;
+  
+}
+.cloudinfrastructure_border{
+
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 575px;
+             height: 200px;
+           margin-left: 20px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.cloudinfrastructure_border::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .cloudinfrastructure_border::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+          
+            left: 0;
+            width: 35%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+.plexoscloudplatformburstcores
+{
+  padding-left: 100px;
+  /* //text-align: right; */
+  word-wrap: normal;
+  /* width:60px*/
+} 
+.PLEXOSCLoudPLATFORMborder
+{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 515px;
+             height: 150px;
+           margin-left: 20px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.PLEXOSCLoudPLATFORMborder::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .PLEXOSCLoudPLATFORMborder::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+          
+            left: 0;
+            width: 35%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+.readonlyusers
+{
+  padding-left: 35px;
+  padding-top: 0px;
+}
+.reportviewusers
+{
+  padding-left: 50px;
+}
+reportviewuserscombobox
+{
+  /* padding-left: 350px; */
+}
+.PLEXOSCLoudborder
+{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 575px;
+             height: 325px;
+           margin-left: 20px;
+          
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.PLEXOSCLoudborder::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .PLEXOSCLoudborder::after {
+   content: "";
+            position: absolute;
+            top: 0;
+            
+          
+            left: 0;
+            width: 15%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+.plexosclod{
+  padding-top: 20px;
+}
+.services
+{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 575px;
+             height: 100px;
+           margin-left: 20px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.services::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .services::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+         
+            left: 0;
+            width: 15%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}

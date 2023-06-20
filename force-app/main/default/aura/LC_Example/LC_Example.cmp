@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute type="List" name="lstcontacts"></aura:attribute>
+	<lightning:card title="Contacts" iconName="standard:contact">
+    
+    </lightning:card>
+</aura:component>

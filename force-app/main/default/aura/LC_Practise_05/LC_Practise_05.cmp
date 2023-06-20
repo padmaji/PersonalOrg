@@ -1,0 +1,31 @@
+<aura:component >
+    <aura:attribute name="firstNumer" type="Integer" />
+    <aura:attribute name="SecondNumer" type="Integer" />
+    <aura:attribute name="res" type="Integer"/>
+    <aura:attribute name="Selmenuitem" type="string"/>
+    
+    <lightning:card title="Accounts sample">
+       <aura:set attribute="actions">
+            <lightning:buttonGroup>
+                <lightning:button label="Submit" onclick="{!c.onsubmit}" variant="brand"/><p></p>
+                <lightning:buttonIcon  onclick="{!c.onsubmit}"  iconName="utility:add" alternativeText="SM"/>
+                <lightning:buttonMenu label="Select the operation" name="dropdown" onselect="{!c.onSelection}" value="{!v.Selmenuitem}" >
+                    <lightning:menuItem label="Addition"  value="Add"/>
+                    <lightning:menuItem label="Subtraction"  value="sub"/>
+                    <lightning:menuItem label="Multiply"  value="Mul"/>
+                    <lightning:menuItem label="Division"  value="Div"/>
+                    
+                </lightning:buttonMenu>
+            </lightning:buttonGroup>
+            
+        </aura:set>
+
+       <aura:set attribute="body">
+            <lightning:input type="text" label="Enter the first number" name="FN" value="{!v.firstNumer}"/>
+            <lightning:input type="text" label="Enter the secondnumber" name="SN" value="{!v.SecondNumer}"/>
+        
+        </aura:set>
+      
+    </lightning:card>
+      The Result is {!v.res}
+</aura:component>

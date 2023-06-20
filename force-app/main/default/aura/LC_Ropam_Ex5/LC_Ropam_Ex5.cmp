@@ -1,0 +1,33 @@
+<aura:component>
+	<aura:attribute type="Account" name="ac"  default="{sObjectType:'Account'}">
+    </aura:attribute>
+   <aura:attribute type="Opportunity" name="opp"  default="{sObjectType:'Account'}">
+    </aura:attribute>
+    <aura:attribute type="Contact" name="con"  default="{sObjectType:'Contact'}">
+    </aura:attribute>
+    <lightning:card  iconName="standard:account">
+        <aura:set attribute="title">
+            Account<br/>
+            Creating new account
+        </aura:set>
+        <lightning:input label="Name" value="{!v.ac.Name}"/>
+        <lightning:input label="Phone" value="{!v.ac.Phone}"/>
+        <lightning:input label="Industry" value="{!v.ac.Industry}"/>
+        
+    </lightning:card>
+    <lightning:card title="Contact" iconName="standard:contact">
+        <lightning:input label="First Name" value="{!v.con.FirstName}"/>
+        <lightning:input label="LastName" value="{!v.con.LastName}"/>
+        <lightning:input label="Email" value="{!v.con.Email}"/>
+        
+    </lightning:card>
+    <lightning:card title="Opportunity" iconName="standard:opportunity">
+        <lightning:input label="Opp Name" value="{!v.opp.Name}"/>
+        <lightning:input label="StageName" value="{!v.opp.StageName}"/>
+        <lightning:input label="Amount" value="{!v.opp.Amount}"/>
+        
+    </lightning:card>
+   
+    
+
+</aura:component>

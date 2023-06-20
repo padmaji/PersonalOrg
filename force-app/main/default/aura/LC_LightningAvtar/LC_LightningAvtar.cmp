@@ -1,0 +1,6 @@
+<aura:component >
+	<lightning:avatar src="{!$Resource.Salesforce_Image}" size="large">
+    </lightning:avatar>
+    <lightning:avatar src="{!$Resource.Facebook_Image}" size="medium" varaint="circle"/>
+    <lightning:avatar src="" size="large" variant="circle" fallbackIconName="standard:person_account" />
+</aura:component>

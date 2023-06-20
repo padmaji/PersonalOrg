@@ -1,0 +1,15 @@
+<aura:component >
+    <aura:registerEvent name="first" type="c:LE_Event_Practise2" />
+    <aura:attribute name="cmpname" type="string"/>
+    <aura:handler name="fhandler" event="c:LE_Event_Practise2" action="{!c.Handler}"/>
+    
+    <lightning:card title="This is Event Practise2">
+    This is lightning practise LC_Event_Practise2
+        <lightning:layout>
+            <lightning:layoutitem size="6">
+                <lightning:input label="enter the name" name="inp" value="{!v.cmpname}" />
+                <lightning:button label="click here" onclick="{!c.ClickMe}" />
+            </lightning:layoutitem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>

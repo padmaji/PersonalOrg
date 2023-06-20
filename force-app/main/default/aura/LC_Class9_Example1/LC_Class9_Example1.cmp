@@ -1,0 +1,19 @@
+<aura:component >
+    <aura:attribute type="Account" name="cacc" default="{sObjectType:'Account'}"/>
+    
+    <aura:registerEvent name="firsty" type="c:LE_Class9_Example1"/>
+    
+    <Lightning:card title="enetr Account details">
+        <aura:set attribute="actions">
+            <lightning:button label="Submit" onclick="{!c.onsubmit}"/>
+            <lightning:button label="clear" onclick="{!c.onClear}"/>
+        </aura:set>
+        <lightning:input label="Enter Acc Name" value="{!v.cacc.Name}"/>
+        <lightning:input label="Enter phone" value="{!v.cacc.Phone}"/>
+        <lightning:input label="Enter Industry" value="{!v.cacc.Industry}"/>
+        <lightning:input label="Enter Rating" value="{!v.cacc.Rating}"/>
+        
+    </Lightning:card>
+    
+    
+</aura:component>

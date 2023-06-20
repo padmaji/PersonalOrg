@@ -1,0 +1,8 @@
+<aura:component >
+    <b><u>CustomerDetails</u></b><br/><br/>
+    CustomerName:Padmaji<br/>
+    CustomerID:314175710158<br/>
+    Location:Hyderabad<br/>
+    Amount:150000<br/>
+    EmailID:Peddireddypadmaji@gmail.com
+</aura:component>

@@ -1,0 +1,48 @@
+<aura:component >
+    <lightning:Tabset>
+        <lightning:tab label="Related">
+            <b>This is Related list tab</b>
+        </lightning:tab> 
+        <lightning:tab label="Details">
+            <b>This is Details Tab</b>
+        </lightning:tab>
+        <lightning:tab label="Activity">
+            <lightning:tabset variant="scoped">
+                <lightning:tab label="NewTask">
+                    <b>THis is anew task</b>
+                </lightning:tab>
+                <lightning:tab label="Log a call">
+                    <b>Log a call</b>
+                </lightning:tab>
+                <lightning:tab label="Email">
+                    <b>This is a mail</b>
+                </lightning:tab>
+                <lightning:tab label="More">
+                    <b>This is a more</b>
+                </lightning:tab>
+                
+            </lightning:tabset>
+        </lightning:tab>
+        
+    
+   <lightning:tab label="chatter">
+        <lightning:tabset variant="scoped">
+            <lightning:tab label="post" iconName="standard:post">
+                <b>This is a post</b>
+            </lightning:tab>
+            <lightning:tab label="poll" iconName="standard:poll">
+                <b>This is a poll</b>
+            </lightning:tab>
+            <lightning:tab label="Question" iconName="action:question_post_action">
+                <lightning:input type="text" label="Question up  to 255 characters" placeholder="What would you like to know?"/>
+                <lightning:input type="richText" label="Details" placeholder="If you have more to say? Details Here.."/>
+                
+                <p aligh="right">
+                    <lightning:button label="post the question" variant="brand"/>
+                </p>
+            </lightning:tab>
+            
+        </lightning:tabset>
+    </lightning:tab> 
+        </lightning:Tabset>
+</aura:component>

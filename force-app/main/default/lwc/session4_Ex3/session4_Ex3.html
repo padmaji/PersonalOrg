@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="LWC-APEX With wire Service-Display data in DIRTY Format">
+        <template if:true={roop.data}>
+        <template for:each={roop.data} for:item="rp">
+
+            <p key={rp.id}>{rp.Name} -- {rp.Industry}-- {rp.Fax}--{rp.Rating}</p>
+        </template>
+    </template>
+    <template if:true={roop.error}>
+        The error is {roop.error}
+    </template>
+    </lightning-card> 
+
+    
+</template>

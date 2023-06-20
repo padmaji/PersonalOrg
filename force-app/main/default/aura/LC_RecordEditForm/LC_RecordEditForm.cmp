@@ -1,0 +1,26 @@
+<aura:component >
+    <div class="accountformcontrol">
+	<lightning:recordEditForm objectApiName="Account" recordId="0015j000008uGvbAAE">
+        <lightning:inputField fieldName="Name" variant="label-stacked"/>
+        <lightning:inputfield fieldName="Rating" />
+       <lightning:inputfield fieldName="Industry" />
+        <lightning:inputfield fieldName="AnnualRevenue"/>
+        <lightning:inputField fieldName="ParentId"/>
+         <lightning:inputField fieldName="AccountNumber"/>
+            <lightning:inputField fieldName="Type"/>
+            <lightning:inputField fieldName="Ownership"/>
+            <lightning:inputField fieldName="Phone"/>
+            <lightning:inputField fieldName="Fax"/>
+            <lightning:inputField fieldName="Website"/>
+            <lightning:inputField fieldName="Share_Account_To__c"/>
+            <lightning:inputField fieldName="BillingAddress"/>
+            <lightning:inputField fieldName="ShippingAddress"/>
+            <lightning:inputField fieldName="CustomerPriority__c"/>
+            <lightning:inputField fieldName="Active__c"/> <br/>
+            <p align="center">
+                <lightning:button type="submit" label="Create Account" variant="brand"/>
+            </p>
+            
+    </lightning:recordEditForm>
+        </div>
+</aura:component>

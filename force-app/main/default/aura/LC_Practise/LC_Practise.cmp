@@ -1,0 +1,55 @@
+<!--<aura:component >
+    <aura:attribute name="firstName" type="string" default="Heloo" />
+    <aura:attribute name="Age" type="integer" default="9" />
+    
+    <lightning:button Label="init"  onclick="{!c.onclick}" />
+    <p> <b>The details are</b> 
+        FirstName is....{!v.firstName}
+        Age is......{!v.Age}
+    </p>
+</aura:component>-->
+<!--<aura:component>
+    <aura:attribute name="result" type="integer" />
+    <lightning:layout >
+   <lightning:layoutitem size="6">
+        <lightning:card iconName="utility:Add">
+       
+    <lightning:input type="integer" label="Enter First Number" aura:id="FN" />
+    <lightning:input type="integer" label="Enter Second Number" aura:id="SN" />
+            <aura:set attribute="actions">
+                <lightning:button label="Addition" aura:id="add" onclick="{!c.Callme}"/>
+                   <lightning:button label="Multiplication" aura:id="mul" onclick="{!c.Callme}"/>
+                   <lightning:button label="Subtraction" aura:id="sub" onclick="{!c.Callme}"/>
+                   <lightning:button label="Division" aura:id="div" onclick="{!c.Callme}"/>
+                
+            </aura:set>
+            </lightning:card>
+    </lightning:layoutitem>
+        <lightning:layoutitem size="6">
+            <p><b>Result is <br/>
+                Result is {!v.result} </b></p>
+        </lightning:layoutitem>
+     </lightning:layout>
+
+</aura:component>-->
+
+<aura:component>
+    <aura:attribute name="Acc" type="Account" default="{sObjecttype:'Account'}"/>
+    <aura:attribute name="con" type="Contact" default="{sObjecttype:'Contact'}"/>
+    <lightning:layout>
+    <lightning:layoutitem size="12">
+        <lightning:card title="Accountdetails">
+            <lightning:input label="accountName" value="{!v.acc.Name}"/>
+            <lightning:input lable="Phone" value="{!v.acc.Phone}"/>
+        </lightning:card>
+        </lightning:layoutitem>
+        
+    </lightning:layout>
+    <b>---------------------------------------------------------</b>
+    <lightning:layoutitem size="12">
+        <lightning:card title="ContactDetails">
+            <lightning:input label="LastName" value="{!v.con.LAstName}"/>
+            <lightning:input lable="Email" value="{!v.con.Email}"/>
+        </lightning:card>
+        </lightning:layoutitem>
+</aura:component>

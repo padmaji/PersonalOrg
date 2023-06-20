@@ -1,0 +1,11 @@
+<aura:component  >
+    <lightning:button label="base" name="baseButton" variant="base"  title="baseTitle"/>
+    <lightning:button  name="neutral" label="neutral" variant="neutral" title="neutralTitle"/>
+    <lightning:button name="brand" label="brand" variant="brand" title="brandTitle"/>
+    <lightning:button  name="brand-outline" label="brand-outline" variant="brand-outline" title="brand-outlineTitle"/>
+    <lightning:button  name="destructive" label="destructive" variant="destructive" title="destructiveTitle"/>
+    <lightning:button  name="destructive-text" label="destructive-text" variant="destructive-text" title="destructive-textTitle"/>
+    <lightning:button  name="inverse" label="inverse"  variant="inverse" title="inverseTitle"/><br/><br/> 
+    
+    <lightning:button variant="success"  label="success"/>
+</aura:component>

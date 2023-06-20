@@ -1,0 +1,7 @@
+<aura:component >
+    <aura:handler event="c:LE_firstEvent" action="{!c.attaction}"/>
+    <aura:attribute name="childempName" type="string" />
+    
+    
+    Child Name is :{!v.childempName}
+</aura:component>

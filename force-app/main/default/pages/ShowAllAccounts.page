@@ -1,0 +1,25 @@
+<apex:page setup="true" sidebar="false" controller="ShowAllAccountsController"  action="{!AllAccounts}">
+<apex:sectionHeader title="Accounts" subtitle="AllAccounts"/>
+<apex:form >
+<apex:pageBlock title="Accounts()">
+<apex:pageBlockTable value="{!lstaccounts}" var="acc">
+<apex:column value="{!acc.id}"/>
+<apex:column headerValue="AccountName">
+<apex:outputLink value="/{!acc.id}"  target="_blank">
+{!acc.Name}
+</apex:outputLink>
+</apex:column>
+
+<apex:column value="{!acc.Rating}"/>
+                <apex:column value="{!acc.Industry}"/>
+                <apex:column value="{!acc.AnnualRevenue}"/>
+                <apex:column value="{!acc.Type}"/>
+                <apex:column value="{!acc.Ownership}"/>
+                <apex:column value="{!acc.Phone}"/>
+                <apex:column value="{!acc.Fax}"/>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+
+  
+</apex:page>

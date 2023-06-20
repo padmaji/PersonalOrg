@@ -1,0 +1,57 @@
+<aura:component >
+    <div class="cardControl">	
+        <lightning:card footer="Copyrights Reserved."  iconName="custom:custom111">
+        <aura:set attribute="title">
+        Account<br/>
+        <b>AbourtInsurance</b>
+            </aura:set>
+       <aura:set attribute="actions">
+           <lightning:button label="Follow" iconName="utility:add"/> &nbsp;
+           <lightning:buttongroup>
+               <lightning:button label="newcontact"/>
+               <lightning:button label="new case"/>
+               <lightning:button label="new note"/>
+               <lightning:buttonmenu>
+                     <lightning:menuitem label="New Opportunity"/>
+                    <lightning:menuitem label="Delete"/>
+                    <lightning:menuitem label="Cancel"/>
+                    <lightning:menuitem label="Sharing"/>
+               </lightning:buttonmenu>
+           </lightning:buttongroup>
+        </aura:set>
+         <aura:set attribute="footer">
+            <lightning:badge label="Account"/>
+            <lightning:badge label="New Customer"/>
+            <lightning:badge label="Premium"/>
+        </aura:set>
+        
+<div>
+     
+            <Table>
+                <tr>
+                    <th>Account Name</th>
+                    <th>Rating</th>
+                    <th>Industry</th>
+                    <th>Annual Revenue</th>
+                    <th>Type</th>
+                    <th>Ownership</th>
+                    <th>Phone</th>
+                    <th>Fax</th>
+                    <th>Active</th>
+                </tr>
+                <tr>
+                    <td>Abbott Insurance</td>
+                    <td>Hot</td>
+                    <td>Insurance</td>
+                    <td>450000000</td>
+					<td>Customer Direct</td>
+                    <td>Public</td>
+                    <td>9988334455</td>
+                    <td>8899009900</td>
+                    <td>Yes</td>
+                </tr>
+            </Table>
+        </div>
+    </lightning:card>
+    </div>
+</aura:component>

@@ -1,0 +1,36 @@
+<aura:component implements="force:hasRecordId,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome">
+<p>Aura page</p>
+<aura:attribute name="inpval" type="string"/>
+<aura:attribute name="jsoninp" type="Object"/>
+<aura:attribute name="recordValue" type="Object" />
+<aura:attribute name="options" type="List" default="[
+    {'label': 'Aura', 'value': 'A'},
+    {'label': 'LWC', 'value': 'L'},
+    {'label': 'AURALWC', 'value': 'AL'}
+    ]"/>
+    <aura:attribute name="value" type="String" />
+   <!-- <aura:attribute name="recordValue" type="object" />-->
+
+<lightning:input name="input1" label="Enter some text" aura:id="inputCmp"  value="{!v.inpval}" onchange="{!c.handleChange}"/>
+<p></p>
+<lightning:button
+    label="Send Payload"
+    variant="brand" 
+    onclick="{!c.handleClick}"/>
+
+<lightning:radioGroup name="radioGroup"
+                          label="Radio Group"
+                          options="{! v.options }"
+                          value="{! v.value }"
+                          type="radio"/>
+ <lightning:button
+    label="seleted"
+    variant="brand" 
+    onclick="{!c.radiohandle}"/>                      
+    
+ <lightning:messageChannel type="AccountData__c"
+    aura:id="ACCOUNT_CHANNEL" scope="APPLICATION" onMessage="{!c.messagechannelchanged}" />
+    
+    <p> is : {!v.recordValue}</p>
+       
+   </aura:component>

@@ -1,0 +1,15 @@
+<apex:page controller="nekvfController">
+  <apex:form >
+  <apex:pageBlock >
+      
+      
+          <apex:pageBlockSection >
+              <apex:inputText value="{!userInput}" label="ContactId"/>
+              
+          </apex:pageBlockSection>
+         oppid is :{!oppId}
+         pi is :{!pi}
+      
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

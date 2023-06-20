@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="ArrayDatatype">
+        <p><b>*****Template for each*******</b></p>
+<template for:each={cities} for:item="c">
+    <p key={c}>{c}</p>
+
+</template>
+
+<p><b>*****Template for each jsonmultiple*******</b></p>
+<template for:each={mperson} for:item="c">
+    <p key={c.Name}>Name is :  {c.Name} <br/>
+                    Age is :{c.Age} <br/>
+                    city is :{c.city} <br/>
+
+    </p>
+
+</template>
+
+<p><b>*******Template iterator*******</b></p>
+<template iterator:it={cities}>
+    <p key={it.value}>{it.value}</p>
+</template>
+<p><b> JSON data is </b></p>
+PersonName :{person.Name}
+PersonAge :{person.Age}
+personCity:{person.city}
+<template iterator:it={mperson}>
+    <p key={it.value.Name}>{it.value.Name},{it.value.Age}</p>
+</template>
+
+    </lightning-card>
+</template>

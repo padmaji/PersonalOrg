@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="rp_session1_example2">
+        <lightning-input label="Enter first number" onchange={FNchan} value={num1}></lightning-input>
+        <lightning-input label="Enter second number" onchange={SNchan} value={num2}></lightning-input>
+        <lightning-input label="Enter third number" onchange={TNchan} value={num3}></lightning-input>
+
+        <lightning-button-group>
+            <lightning-button label="Add" onclick={onAddition}></lightning-button>
+            <lightning-button label="sub" onclick={onsubbtraction}></lightning-button>
+            <lightning-button label="Mul" onclick={onMultiply}></lightning-button>
+            <lightning-button label="Div" onclick={ondiv}></lightning-button>
+            <lightning-button label="GreaterNumber" onclick={ongreater}></lightning-button>
+            <lightning-button label="Clear" onclick={onclearme}></lightning-button>
+        </lightning-button-group>
+        <p><b>@@@@@The result is @@@@@@@@@@</b></p>
+        Result is :    {result} <br/> <br/>
+
+        greater number  is :    {greater}
+    </lightning-card>
+       
+</template>

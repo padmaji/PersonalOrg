@@ -1,0 +1,5 @@
+<aura:component >
+    <aura:attribute name="var1" type="string" default="Haiiiii" />
+    
+    variable name is...{!v.var1}
+</aura:component>

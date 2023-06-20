@@ -1,0 +1,10 @@
+<aura:component >
+    <lightning:buttonStateful 
+                              labelWhenOff="Following"
+                              labelWhenOn = "Follow"
+                              labelWhenHover="Stop Following"
+                              iconNameWhenOff = "utility:add"
+                              iconNameWhenOn = "utility:check"
+                              iconNameWhenHover = "utility:close"
+                              variant = "brand"/>
+</aura:component>

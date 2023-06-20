@@ -1,0 +1,7 @@
+<aura:component >
+	<lightning:breadcrumbs>
+        <lightning:breadcrumb label="google" title="go to google" href="https://www.google.com"/>
+        <lightning:breadcrumb label="salesforce" title="go to salesforce" href="https://www.salesforce.com"/>
+        <lightning:breadcrumb label="youtube" title="go to youtube" href="https://www.youtube.com"/>
+    </lightning:breadcrumbs>
+</aura:component>

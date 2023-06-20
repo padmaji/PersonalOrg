@@ -1,0 +1,34 @@
+<aura:component >
+    <div style="width:30%; float;left; padding:10px; border:2px solid black;">
+    <u><b>Customer Registration Form</b></u> <br/><br/>
+    <lightning:input type="text" label="First Name" placeholder="First Name" name="fName" required="true"/>
+    <lightning:input type="text" label="Last Name" placeholder="Last Name" name="lName" maxLength="10" required="true"/>
+    <lightning:input type="text" label="Address" placeholder="Mailing Address" name="address" maxLength="100" required="true"/>
+    <lightning:input type="text" label="City Name" placeholder="City Name" name="city" required="true"/>
+    <lightning:select label="Select the Country" value="usa" required="true" title="Select Any Countr">
+        <option value=""> ---- None ---- </option>
+        <option value="ind">India</option>
+        <option value="aus">Australia</option>
+        <option value="grm">Germany</option>
+        <option value="jpn">Japan</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+    </lightning:select>
+    <lightning:input type="text" label="Postal / Zip Code" placeholder="Zip Code" name="zip" required="true"/>
+    <lightning:input type="number" label="Customer Age" placeholder="Customer Age" min="20" max="50" required="true"/>
+    <lightning:input type="email" label="Email Address" placeholder="Email Address" name="email" required="true"/>
+    <lightning:input type="tel" label="Contact Number" placeholder="Contact Number" name="phone" required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+    <lightning:input type="text" label="Company Name" placeholder="Company Name" name="company" maxLength="50" required="true"/>
+    <lightning:input type="text" label="User ID" placeholder="User ID" name="userid" required="true" maxLength="20"/>
+    <lightning:input type="password" label="Enter Password" placeholder="Enter Password" maxLength="15" name="password" required="true"/>
+    <lightning:input type="password" label="Confirm Password" placeholder="Confirm Password" maxLength="15" name="confirmPass" required="true"/>
+    <lightning:input type="checkbox" label="Join our mailing list" checked="false"/>
+    <lightning:input type="toggle" label="sendupdate" name="updates" checked="true"/>
+    <lightning:input type="url" label="enter the website name" name="url" placeholder="Enter the website name"/>
+    <lightning:input type="date" label="Dateofbirth" name="dob" placeholder="DateofBirth"/>
+    <lightning:input type="file" label="select the file" multiple="true" name="attachement" accept=".doc,.docx,.pdf"/>
+    <lightning:input type="color" name="color" label="Select the Color"/>
+    <lightning:input type="checkbox-button" label="Follow News Letter" title="Follow News Letter" checked="true"/>
+    </div>
+    
+</aura:component>

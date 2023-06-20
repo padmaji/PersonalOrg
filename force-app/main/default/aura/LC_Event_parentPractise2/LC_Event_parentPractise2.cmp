@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:handler name="first" event="c:LE_Event_Practise2" action="{!c.Handle}"/>
+    
+    <lightning:card title="parentcomponent">
+        This is ParentComponent
+    </lightning:card>
+    <c:LC_Event_Practise2></c:LC_Event_Practise2>
+</aura:component>

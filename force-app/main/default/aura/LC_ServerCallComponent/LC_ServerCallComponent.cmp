@@ -1,0 +1,11 @@
+<aura:component controller="ShowMessage" >
+  
+
+    <aura:attribute type="string" name="result" />
+    <lightning:button label="clickHere" variant="base" onclick="{!c.showMessage}"/>
+    
+    
+    Method result is ......{! v.result}
+
+
+    </aura:component>

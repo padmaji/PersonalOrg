@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:handler name="firsty" event="c:LE_Practise_R" action="{!c.handleMe}" />
+    <lightning:card title="Event compoennt">
+        Hi-this is c1 yellow
+    
+    </lightning:card>
+    <c:LC_Practise_R_C11_blue/>                                            
+</aura:component>

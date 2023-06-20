@@ -1,0 +1,59 @@
+<!--<apex:page >
+   <apex:pageblock title="Account">
+    <apex:pageBlockSection title="Account info">
+       This is Account info section
+       </apex:pageBlockSection> 
+       <apex:pageBlockSection title="Account info second section">
+       This is account info second section
+       </apex:pageBlockSection>
+       <apex:pageBlockSection title="Account info third section">
+       This is account info third section
+       </apex:pageBlockSection>
+       
+      
+    </apex:pageblock>
+    <apex:pageblock title="contact">
+        <apex:pageBlockSection title="contact info">
+       This is Account info section
+       </apex:pageBlockSection> 
+       <apex:pageBlockSection title="contact info second section">
+       This is account info second section
+       </apex:pageBlockSection>
+       <apex:pageBlockSection title="contact info third section">
+       This is account info third section
+       </apex:pageBlockSection>
+    </apex:pageblock>
+    <apex:pageblock title="Opportunity">
+        <apex:pageBlockSection title="Opportunity info">
+       This is Account info section
+       </apex:pageBlockSection> 
+       <apex:pageBlockSection title="Opportunity info second section">
+       This is account info second section
+       </apex:pageBlockSection>
+       <apex:pageBlockSection title="Opportunity info third section">
+       This is account info third section
+       </apex:pageBlockSection>
+    </apex:pageblock>
+</apex:page>
+<apex:page standardController="Account" sidebar="false" showHeader="false">
+    <apex:pageblock title="Accountsss">
+        <apex:pageblocksection title="Pageblocksection" columns="1">
+        <apex:outputField value="{!Account.Name}"/>
+            <apex:outputField value="{!account.fax}"/>
+            <apex:outputField value="{!account.Rating}"/>
+            <apex:outputField value="{!account.Industry}"/>
+            <apex:outputField  value="{!account.Id}"/>
+            
+        </apex:pageblocksection>
+    </apex:pageblock>
+    <apex:pageblock title="Related pageblock">
+       <apex:pageBlockSection title="list of page block">
+           <apex:relatedList list="contacts" />
+           <apex:relatedList list="opportunities"/>
+           <apex:relatedList list="cases"/>
+        </apex:pageBlockSection>
+    </apex:pageblock>
+</apex:page>-->
+<apex:page >
+    <apex:detail ></apex:detail>
+</apex:page>

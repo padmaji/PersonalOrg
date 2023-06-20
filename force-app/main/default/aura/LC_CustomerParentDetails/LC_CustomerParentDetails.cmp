@@ -1,0 +1,5 @@
+<aura:component >
+    <b><u>CustomerParentDetails</u></b><br/><br/>
+    Parent:Murthy<br/>
+    Mother:Tulasi<br/>
+</aura:component>

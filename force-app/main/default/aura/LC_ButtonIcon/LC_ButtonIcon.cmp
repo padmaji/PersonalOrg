@@ -1,0 +1,11 @@
+<aura:component >
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" disabled="true"/>
+    
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="bare"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="container"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="brand"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="border"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="border-filled"/>
+    <lightning:buttonicon title="Click on settings" iconName="utility:settings" alternativeText="Settings" variant="bare-inverse"/>
+</aura:component>

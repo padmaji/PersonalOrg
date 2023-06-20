@@ -1,0 +1,7 @@
+<aura:event type="Component" description="Event template">
+    <aura:attribute name="EempName" type="string"/>
+    <aura:attribute name="Ephone" type="string"/>
+    <aura:attribute name="Efax" type="string"/> 
+    <aura:attribute name="Eindustry" type="string"/>   
+    
+</aura:event>

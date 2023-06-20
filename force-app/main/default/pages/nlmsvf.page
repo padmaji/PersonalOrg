@@ -1,0 +1,63 @@
+<apex:page lightningStylesheets="true">
+    <apex:includeLightning />
+<p></p>
+<b>Vf Page</b>
+<p></p>
+<p>Enter your text here:<input type="text" id="inp"/> </p>
+
+<p></p>
+<p></p>
+<div>
+    <input type="radio" name="Framework" value="A" id="A"/>
+    <label for="A">Aura</label>
+</div>
+<div>
+    <input type="radio" name="Framework" value="L" id="L"/>
+    <label for="L">LWC</label>
+</div>
+<div>
+    <input type="radio" name="Framework" value="AL" id="AL"/>
+    <label for="L">AURALWC</label>
+</div>
+<p>
+    <button id="btn">Show Selected Value</button>
+</p>
+
+<p></p>
+
+<button onclick="Publishme()">publish</button>
+
+<p></p>
+<script>
+let radio;
+const btn = document.querySelector('#btn');        
+        const radioButtons = document.querySelectorAll('input[name="Framework"]');
+        btn.addEventListener("click", () => {
+            let selectedSize;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedSize = radioButton.value;
+                    break;
+                }
+            }
+
+            // show the output:
+            radio = selectedSize;
+        });
+var ACCOUNT_CHANNEL="{!$MessageChannel.AccountData__c}";
+var subscriptionToMc;
+
+function Publishme(event)
+{
+    const msg={
+        recordId:document.getElementById('inp').value,
+        name:'from visual forcepage',
+        Destination:radio
+
+    };
+    sforce.one.publish(ACCOUNT_CHANNEL,msg);
+}
+
+
+</script>
+</apex:page>

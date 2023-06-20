@@ -1,0 +1,22 @@
+<aura:component >
+	<lightning:accordion title="AccountsSection">
+	<lightning:accordionSection label="BasicInformation" name="name">
+        <lightning:input type="text" label="firstName" name="fname">
+        </lightning:input>
+        <lightning:input type="text" label="LastName" name="lanme"/>
+        
+        </lightning:accordionSection > 
+        <lightning:accordionSection label="ContactInformation"  name="name">
+            <lightning:input type="tel" label="ContactNumber" name="Connumber"/>
+            <lightning:input type="email" label="EmailAddress" name="email"/>
+        </lightning:accordionSection>
+        <lightning:accordionSection label="AddressInformation"  name="name">
+            <lightning:select label="Select the city">
+            <option value="Hyd">Hyderabad</option>
+                <option value="BMT">Begumpet</option>
+                <option value="SEC">Secunderabad</option>
+            </lightning:select>
+        </lightning:accordionSection>
+        
+    </lightning:accordion>
+</aura:component>

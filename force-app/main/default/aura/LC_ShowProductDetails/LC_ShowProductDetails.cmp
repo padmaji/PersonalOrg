@@ -1,0 +1,24 @@
+<aura:component >
+    <aura:attribute name="productcode" type="string" />
+    <aura:attribute name="productname" type="string" />
+    <aura:attribute name="manufacturer" type="string" />
+    <aura:attribute name="unitprice" type="decimal" />
+    <aura:attribute name="manufacturingdate" type="date" />
+    <aura:attribute name="expirydate" type="date" />
+    <aura:attribute name="isInStock" type="boolean" />
+   
+    <aura:handler name="init" value="{!this}" action="{!c.setproductdetails}"/>
+    
+        <!-- Represent the values on the Component -->
+    <h1>Product Details</h1> <hr/>
+    Product Code is.....: {! v.productcode} <br/>
+    Product Name is.....: {! v.productname} <br/>
+    Manufacturer Name...: {! v.manufacturer} <br/>
+    Unit Price is.......: {! v.unitprice} <br/>
+    Manufacturing Date..: {! v.manufacturingdate} <br/>
+    Expiry Date is......: {! v.expirydate} <br/>
+    Product is In Stock.: {! v.isInStock}<br/>
+    
+    
+    
+</aura:component>

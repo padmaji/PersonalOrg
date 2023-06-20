@@ -1,0 +1,17 @@
+<aura:component >
+	<lightning:carousel title="ImageScrolling" disableAutoRefresh="false" disableAutoScroll="true" scrollDuration="2">
+        <lightning:carouselImage src="{!$Resource.Salesforce_Image}" href="http://WWw.salesforce.com" header="Salesforce"
+                                 alternativeText="Www.salesforce.com">
+        </lightning:carouselImage>
+        <lightning:carouselImage src="{!$Resource.Facebook_Image}" href="http://WWW.Facebook.com" header="Facebook"
+                                 alternativeText="Www.Facebook.com">
+        </lightning:carouselImage>
+         <lightning:carouselImage src="{!$Resource.Youtube_Image}" href="http://WWW.Youtube.com" header="Youtube"
+                                 alternativeText="Www.Youtube.com">
+        </lightning:carouselImage>
+        <lightning:carouselImage src="{!$Resource.Google_Image}" href="http://WWW.google.com" header="googel"
+                                 alternativeText="Www.googel.com">
+        </lightning:carouselImage>
+        
+    </lightning:carousel>
+</aura:component>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="LDS-LWS Imperation with wire">
+        <lightning-input label="Enter the search text" onchange={onlabelChange}></lightning-input>
+        <p></p>
+        <lightning-datatable key-field="Id" data={res.data} columns={colum} onsave={onSave} draft-values={draftValues} ></lightning-datatable>
+    </lightning-card>
+</template>

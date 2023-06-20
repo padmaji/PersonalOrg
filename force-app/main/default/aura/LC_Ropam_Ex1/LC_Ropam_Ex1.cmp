@@ -1,0 +1,15 @@
+<aura:component >
+	<lightning:card title="This is account" iconName="standard:account">
+        This is first lightning card
+    </lightning:card>
+    
+    <lightning:card  iconName="standard:account">
+        <aura:set attribute="title">
+            Account <br/>
+            This is first lightning card <lightning:buttonicon iconName="utility:hierarchy"/>
+        </aura:set>
+       
+    </lightning:card>
+    
+    
+</aura:component>

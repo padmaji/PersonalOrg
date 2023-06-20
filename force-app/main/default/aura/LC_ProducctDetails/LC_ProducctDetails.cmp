@@ -1,0 +1,20 @@
+<aura:component >
+    <aura:attribute name="productCode" type="String"/>
+    <aura:attribute name="productName" type="String" required="true"/>
+    <aura:attribute name="manufacturer" type="String" default="Bosch INC."/>
+    <aura:attribute name="unitprice" type="Integer"/>
+    <aura:attribute name="emailAddress" type="String"/>
+    <aura:attribute name="isInStock" type="boolean"/>
+    
+    <b><u>ProductDetails</u></b><br/><br/>
+    ProductCode....{!v.productCode}<br/>
+    
+    productName....{!v.productName}<br/>
+    MAnnufacturer...{!v.manufacturer}<br/>
+    unitprice.......{!v.unitprice}<br/>
+    emailAddress.....{!v.emailAddress}<br/>
+    ISInStock.......{!v.isInStock}
+    
+    
+    
+</aura:component>

@@ -1,0 +1,38 @@
+<apex:page controller="SearchAccountsController" setup="true" sidebar="true" tabStyle="contact">
+<apex:sectionHeader title="Accounts" subtitle="searchAccounts"/>
+
+<apex:form >
+<apex:pagemessages id="errors" ></apex:pagemessages>
+<apex:pageBlock title="SearchAccounts">
+<apex:pageBlockSection title="searchRecords" collapsible="true" columns="3">
+<apex:inputtext label="enter the Searchcontent:" html-placeholder="enter the AccountName"  value="{!searchtext}"/>
+<apex:inputtext label="enter search city :" html-placeholder="enter the cityName" value="{!cityname}"/>
+<apex:commandButton value="SearchRecords" action="{!GetDetails}" reRender="pgblock,errors"/>
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+<apex:pageBlock title="AccountresultSection :({!lstaccount.size})" id="pgblock">
+
+<apex:pageBlockTable value="{!lstaccount}" var="acc">
+<apex:column value="{!acc.id}"/>
+<apex:column headerValue="AccountANme">
+
+<apex:outputLink value="/{!acc.id}">
+{!acc.Name}
+</apex:outputLink>
+</apex:column>
+<apex:column value="{!acc.Rating}"/>
+                <apex:column value="{!acc.Industry}"/>
+                <apex:column value="{!acc.AnnualRevenue}"/>
+                <apex:column value="{!acc.BillingCity}"/>
+                <apex:column value="{!acc.Type}"/>
+                <apex:column value="{!acc.Ownership}"/>
+                <apex:column value="{!acc.Phone}"/>
+                <apex:column value="{!acc.Fax}"/>
+</apex:pageBlockTable>
+
+</apex:pageBlock>
+</apex:form>
+
+  
+</apex:page>

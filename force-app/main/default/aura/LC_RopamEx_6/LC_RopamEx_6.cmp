@@ -1,0 +1,30 @@
+<aura:component >
+    <aura:attribute name="flag" type="boolean" default="false"/>
+    <aura:attribute type="Integer"  name="Rsult"/>
+    <lightning:layout multipleRows="true" >
+        <lightning:layoutitem size="10">
+            <lightning:card title="Account" >
+                <lightning:input label="First Number" aura:id="Fn"></lightning:input>
+                <lightning:input label="Second Number" aura:id="Ln"></lightning:input>
+                <lightning:button label="Multiply" onclick="{!c.CallMe}"/>
+                 <lightning:button label="Clear" onclick="{!c.ClearMe}"/>
+            </lightning:card>
+        </lightning:layoutitem>
+        <lightning:layoutitem size="8">
+            <aura:if isTrue="{!v.flag}">
+                <lightning:card title="contact">
+                    The result is :{!v.Rsult}
+                    this is Card with size 5
+                </lightning:card>
+            </aura:if>
+        </lightning:layoutitem>
+        
+        <lightning:layoutitem size="4">
+            <aura:if isTrue="{!v.flag}">
+                <lightning:card title="Opportunity">
+                    This is a card with size 4
+                </lightning:card>
+            </aura:if>
+        </lightning:layoutitem>
+    </lightning:layout>
+</aura:component>

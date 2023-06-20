@@ -1,0 +1,9 @@
+<aura:component >
+	<lightning:card title="Multiple contacts">
+        <lightning:button label="click me" onclick="{!c.onClick}"/>
+     </lightning:card>
+    <p></p>
+    =========================Dynamic Components=========================================
+    {!v.body}
+    <lightning:button label="Kill Me" onclick="{!c.KillMe}" />
+</aura:component>

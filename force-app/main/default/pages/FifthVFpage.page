@@ -1,0 +1,6 @@
+<apex:page standardController="Account" setup="false" sidebar="false" tabStyle="Account">
+<chatter:followers entityId="{!Account.id}"/>
+<apex:detail title="false" showChatter="false" relatedList="false" inlineEdit="true"/>
+<apex:relatedList list="Contacts" pagesize="5"/>
+  <apex:relatedList list="cases" pageSize="3"/>
+</apex:page>

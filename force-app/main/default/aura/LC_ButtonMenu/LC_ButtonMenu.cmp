@@ -1,0 +1,9 @@
+<aura:component >
+	<lightning:buttonmenu variant="brand-outline" iconName="utility:settings">
+        <lightning:menuitem label="Edit"/>
+        <lightning:menuitem label="Cancel"/>
+        <lightning:menuitem label="Delete"/>
+        <lightning:menuitem label="ChangeOwner"/>
+        <lightning:menuitem label="sharing"/>
+        <lightning:menuitem label="Check_For_new_data"/>
+</lightning:buttonmenu></aura:component>

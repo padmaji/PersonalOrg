@@ -1,0 +1,71 @@
+<aura:component >
+   <!-- <lightning:layout >
+        <lightning:layoutItem size="6">
+            <lightning:recordViewForm recordId="0015j00000C3fkzAAB" objectApiName="Account">
+        <lightning:outputField fieldName="Name"/>
+        <lightning:outputField fieldName="Phone"/>
+        <lightning:outputField fieldName="Fax"/>
+        <lightning:outputField fieldName="Industry"/>
+        <lightning:outputField fieldName="Rating"/>
+        <lightning:outputField fieldName="BillingCity"/>
+       </lightning:recordViewForm>
+            </lightning:layoutItem>
+        <lightning:layoutItem size="6">
+        <lightning:recordEditForm recordId="0015j00000C3fkzAAB" objectApiName="Account">
+           <lightning:inputField fieldName="Name"/>
+        <lightning:inputField fieldName="Phone"/>
+        <lightning:inputField fieldName="Fax"/>
+        <lightning:inputField fieldName="Industry"/>
+        <lightning:inputField fieldName="Rating"/>
+        <lightning:inputField fieldName="BillingCity"/>
+            
+            </lightning:recordEditForm>
+        </lightning:layoutItem>
+
+        </lightning:layout>-->
+    <lightning:layout>
+    <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Compact" mode="view">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+        <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Compact" mode="edit">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+                <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Compact" mode="readonly">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+         <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Full" mode="view">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+        <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Full" mode="edit">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+                <lightning:layoutitem size="3">
+        <lightning:recordForm recordId="0015j00000C3fkzAAB" objectApiName="Account" layoutType="Full" mode="readonly">
+        
+        
+        
+        </lightning:recordForm>
+        </lightning:layoutitem>
+    </lightning:layout>
+    
+</aura:component>

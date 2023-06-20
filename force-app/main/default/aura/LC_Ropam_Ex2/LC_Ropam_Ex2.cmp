@@ -1,0 +1,22 @@
+<aura:component >
+    
+    <aura:attribute name="fnumber" type="integer"/>
+     <aura:attribute name="snumber" type="integer"/>
+     <aura:attribute name="tnumber" type="integer"/>
+     <aura:attribute name="res" type="integer"/>
+    
+	<lightning:card title="Greater of 3 numbers" iconName="standard:case">
+    <lightning:input label="Enetr first number" value="{!v.fnumber}"></lightning:input>
+         <lightning:input label="Enetr second number" value="{!v.snumber}"></lightning:input>
+         <lightning:input label="Enetr Third number" value="{!v.tnumber}"></lightning:input>
+        
+        <aura:set attribute="actions">
+            <lightning:button label="Check" onclick="{!c.Check}" variant="success"/>
+            <lightning:button label="Cancel" onclick="{!c.Cancel}" variant="destructive"/>
+                          
+        </aura:set>
+    </lightning:card>
+    <lightning:card title="Result of three numbers">
+        Result is :{!v.res}
+    </lightning:card>
+</aura:component>

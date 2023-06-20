@@ -1,0 +1,14 @@
+<apex:page standardController="Account" setup="false" sidebar="false" tabstyle="Contact">
+<apex:tabPanel switchType="ajax">
+<apex:tab label="AccountDetails" name="accdetails"> 
+<apex:detail title="true" inlineEdit="false" showChatter="true" relatedList="false"/>
+</apex:tab>
+<apex:tab label="ContactDetails" name="ccdetails">
+<apex:relatedList list="contacts"/>
+</apex:tab>
+<apex:tab label="CaseDetails" name="cdetails"> 
+<apex:relatedList list="cases"/>
+</apex:tab>
+</apex:tabPanel>
+  
+</apex:page>

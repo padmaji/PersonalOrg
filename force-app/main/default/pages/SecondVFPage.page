@@ -1,0 +1,17 @@
+<apex:page setup="false" sidebar="false" showHeader="true"  tabStyle="Recruiter__c">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: SecondVFPage
+  <!-- End Default Content REMOVE THIS -->
+ <apex:sectionHeader title="Recruiter Edit" subtitle="New Recruiter"/>
+ <apex:form >
+ <apex:pageBlock title="AccountsBlock">
+ <apex:pageblockSection title="AccountsBlockSection" collapsible="true">
+ <apex:pageBlockSection title="RelatedAccountsBlock" collapsible="true"></apex:pageBlockSection>
+ </apex:pageblockSection>
+
+ 
+ <apex:pageBlockSection title="AdressBlockinfo" collapsible="true"></apex:pageBlockSection>
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

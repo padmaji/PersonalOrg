@@ -1,0 +1,13 @@
+<aura:component controller="LEmployeeFullNameHelper">
+    <aura:attribute name="completename"  type="string"/>
+    <div>
+    <lightning:input type="text" label="firstName" placeholder="FirstName" aura:id="FN"/>
+    <lightning:input type="text" label="Lastname" placeholder="LastName" aura:id="LN"/>
+    
+    <br/>
+    <ui:outputText  value="{!v.completename}"/>
+    <p align="centre">
+        <lightning:button label="Click" onclick="{!c.FullName}" />
+    </p>
+        </div>
+</aura:component>

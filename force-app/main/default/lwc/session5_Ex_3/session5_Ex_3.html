@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="LWC-LDS update a record">
+        <lightning-input label="Search the Element" onchange={onchange} ></lightning-input>
+
+
+        <p></p>
+        <b>****************Result is ***********************</b>
+        <lightning-datatable  key-field="id"  data={res.data} columns={colm}></lightning-datatable>
+    </lightning-card>
+</template>

@@ -1,0 +1,20 @@
+<template>
+  <p></p>
+  <lightning-card  variant="Narrow"  title="LWC-Publisher" icon-name="standard:account">
+    <lightning-input onchange={inputchange} label="Enter the text"></lightning-input>
+    <p></p>
+    <lightning-button label="send data" onclick={publishme}></lightning-button>
+    <p></p>
+    
+  </lightning-card>
+ <p></p>
+
+
+<div>
+    <lightning-button label="Subscribe" onclick={subscribeMC}></lightning-button>
+    <lightning-button label="Unsubscribe" onclick={unsubscribeMC}></lightning-button>
+    <lightning-button label="Clear" onclick={handleClear}></lightning-button>
+    <p>Latest Message Received</p>
+    <lightning-formatted-text value={receivedMessage}></lightning-formatted-text>
+</div>
+</template>

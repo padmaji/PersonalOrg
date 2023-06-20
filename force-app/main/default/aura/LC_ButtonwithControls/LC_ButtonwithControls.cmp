@@ -1,0 +1,12 @@
+<aura:component >
+   <lightning:button  iconName="utility:new"  label="New"  name="Newbutton" title="Newbutontitle" variant="brand-outline" />
+    <lightning:button label="Edit" name="Editbutton" title="Editbuttontitle" iconName="action:edit"  iconPosition="left"/>
+    <lightning:button label="Delete" name="Deletebutton" title="Deletebuttontitle"  iconPosition="left" iconName="utility:delete"/>
+    <lightning:button label="Cancel" name="Cancelbutton" title="Cancelbuttontitle" iconName="standard:cancel_checkout" iconPosition="left"/>
+    <lightning:button label="LogaCall" name="Logacallbutton" title="Logacallbuttontitle" iconName="utility:log_a_call" iconPosition="left"/>
+    <lightning:button label="EndCall" name="EndCallbutton" title="EndCallbuttontitle" iconName="utility:end_call" iconPosition="left"/>
+    <lightning:button label="Download" name="downloadbutton" title="downloadbuttontitle" iconName="utility:download" iconPosition="left"/>
+    <lightning:button label="SendMessage" name="SendMessagebutton" title="SendMessagebuttontitle" iconName="utility:send"
+ iconPosition="left"/>
+    
+</aura:component>

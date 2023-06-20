@@ -1,0 +1,10 @@
+<apex:page >
+   <apex:pageblock title="contact Info">
+    </apex:pageblock>
+    <apex:pageBlock title="Address info">
+    </apex:pageBlock>
+    
+     <apex:pageBlock title="accountinfo">
+    </apex:pageBlock>
+ 
+</apex:page>

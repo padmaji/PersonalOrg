@@ -1,0 +1,10 @@
+<aura:component >
+	<lightning:progressIndicator variant="shaded" currentStep="3" type="path" >
+    <lightning:progressStep label="Start" value="1"></lightning:progressStep>
+    <lightning:progressStep label="compile" value="2"></lightning:progressStep>
+    <lightning:progressStep label="Intermediate" value="3"></lightning:progressStep>
+    <lightning:progressStep label="Execute" value="4"></lightning:progressStep>
+    <lightning:progressStep label="Finish" value="5"></lightning:progressStep>
+    </lightning:progressIndicator>
+    
+</aura:component>

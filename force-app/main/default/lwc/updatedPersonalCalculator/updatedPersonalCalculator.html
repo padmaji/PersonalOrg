@@ -1,0 +1,395 @@
+<template>
+  <div class="slds-grid slds-gutters">
+<div class="slds-col slds-size_1-of-3">
+<div class="input-container">
+<div class="input-label b">Customer</div>
+<div class="input-wrapper">
+<lightning-input value={customerid} read-only="true"></lightning-input>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">OpportunityId</div>
+<div class="input-wrapper">
+<lightning-input value={OppId} read-only="true" ></lightning-input>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">Currency</div>
+<div class="input-wrapper">
+  <lightning-combobox
+
+  name="Currency"
+
+  label=""
+
+  value={currencyval}
+
+  options={currencyoptions}
+
+  onchange={handleCurrencyChange} ></lightning-combobox>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">Segment</div>
+<div class="input-wrapper">
+<lightning-combobox
+
+  name="segment"
+
+  label=""
+class="labelColour"
+  value={segmentvalue}
+
+  options={segmentoptions}
+
+  onchange={HandleSegmentchange} ></lightning-combobox>
+</div> 
+</div>
+
+<div class="input-container">
+<div class="input-label b">Metrix</div>
+<div class="input-wrapper">
+<lightning-input value={metricvalue} ></lightning-input>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">Size</div>
+<div class="input-wrapper">
+<lightning-input value={inpsizevalue} onchange={handlesizevalChange}></lightning-input>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b"><b>Named UsersAnalysts</b></div>
+<div class="input-wrapper">
+  <lightning-combobox
+
+  name="Analysts"
+
+  label=""
+
+  value={analystsuservalue}
+
+  options={useranalysts}
+
+  onchange={handleanalystsusersChange} ></lightning-combobox>
+</div> 
+</div>
+
+<div class="input-container">
+<div class="input-label b">On-prem Connect Cores</div>
+<div class="input-wrapper">
+  <lightning-combobox
+
+  name="Analysts"
+
+  label=""
+
+  value={analystsuservalue}
+
+  options={useranalysts}
+
+  onchange={handleanalystsusersChange} ></lightning-combobox>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">License Discount</div>
+<div class="input-wrapper">
+<lightning-input value={inpsizevalue} onchange={handlesizevalChange}></lightning-input>
+</div> 
+</div>
+</div>
+<div class="slds-col slds-size_1-of-3">
+<div class="tprogressbar"></div>
+<div> <lightning-progress-bar value={inpsizevalue} size={progreebarmaxvalue}></lightning-progress-bar>
+<!-- <div class="slds-progress-bar"  aria-valuenow={inpsizevalue} 
+aria-valuemin={progreebarminvalue} aria-valuemax={progreebarmaxvalue}  role="progressbar">   -->
+<!-- <span class="slds-progress-bar__value" style={stylewidth}> -->
+<!-- <span class="slds-assistive-text">Progress: 75%</span> -->
+<!-- </span> -->
+
+<div class="input-container">
+  <template for:each={size} for:item="it">
+<p key={it} class="input-label b">  </p>
+  <div key={it} class="input-wrapper">
+<p key={it} > {it}</p>
+</div>
+</template>
+  </div>
+
+
+
+  <div class="input-container">
+  <template for:each={sizevalue} for:item="it">
+<p key={it} class="input-label b">  </p>
+  <div key={it} class="input-wrapper">
+<p key={it} > {it}</p>
+</div>
+</template>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+<div class="slds-col slds-size_1-of-3">
+<div class="input-container">
+<div class="input-label b">Date</div>
+<div class="input-wrapper">
+  <lightning-input value={todaydate}  read-only="true"></lightning-input>
+</div> 
+</div>
+<div class="input-container">
+<div class="input-label b">Quote #:</div>
+<div class="input-wrapper">
+  <lightning-input value={gquotedata}  read-only="true"></lightning-input>
+</div> 
+</div>
+</div>
+
+
+</div>
+<div class="slds-grid slds-gutters">
+<div class="slds-col slds-size_2-of-3">
+<div style="margin-bottom: 18px;"> </div>
+  <div class="radio_border"> 
+<p style="padding-left: 2px; text-align:left" >Environemnt</p>
+
+<!-- <div class="input-container"> -->
+
+<div class="input-wrapper ">
+<div class="horizontal-checkbox-group" >
+  <template for:each={environment} for:item="option">
+    <div key={option.value} class="checkbox-wrapper">
+      <lightning-input type="checkbox" style="padding-left: 10px;"
+        label={option.label}
+        value={option.value}
+          
+        onchange={handleCheckboxChange}>
+      </lightning-input>
+    </div>
+  </template>
+  
+
+  </div>
+</div>
+
+<!-- </div> -->
+</div>
+<div style="margin-bottom: 18px;"> </div>
+<div class="radio_border_licensed"> 
+  
+  <p style="padding-left: 2px; text-align:left" >Licensed Commodities/Options</p>
+<div class="input-wrapper ">
+<div class="horizontal-checkbox-group" >
+  <template for:each={licensed} for:item="option">
+    <div key={option.value} class="checkbox-wrapper">
+      <lightning-input type="checkbox" style="padding-left: 10px;"
+        label={option.label}
+        value={option.value}
+          
+        onchange={handleCheckboxChange}>
+      </lightning-input>
+    </div>
+  </template>
+  
+
+  </div>
+</div>
+</div>
+
+
+
+</div>
+<div class="slds-col slds-size_1-of-3">
+<div style="margin-bottom:150px;text-align:right;padding-left:60Px"></div>
+<p style="text-decoration: underline;padding-left:40px;"><lightning-formatted-text value="Email salesforce.com" ></lightning-formatted-text></p>
+</div>
+
+</div>
+<div style="padding-bottom:20px"></div>
+<div class="slds-grid slds-gutters">
+  <div class="slds-col slds-size_2-of-3">
+    <div class="cloudinfrastructure_border"> 
+      <p style="padding-left: 2px; text-align:left" >Cloud 
+        infrastructure options
+      </p>
+    <div class="input-container ">
+<lightning-checkbox-group name="Checkbox Group"
+                            label=""
+                            options={plexos}
+                            value={value}
+                            onchange={handleChange}></lightning-checkbox-group>
+
+  
+<div class="input-label b paddingleftBaseCloudCores">Base Cloud Cores</div>
+<div class="input-wrapper">
+<lightning-input style="padding-left:50px" value="Basevalue"></lightning-input>
+</div> 
+
+</div>
+<div class="input-container">
+<div class="input-label b additionalBaseCloudCores">Work space Users</div>
+<div class="input-wrapper ">
+<lightning-input style="padding-left:10px"  value="workspacevalue" ></lightning-input>
+</div>
+ <div class="input-label b additionalBaseCloudCoresV2">Additional Cores</div>
+<div class="input-wrapper ">
+    <lightning-combobox
+style="padding-left:10px"
+  name="Currency"
+
+  label=""
+
+  value={currencyval}
+
+  options={AdditionalCores}
+
+  onchange={handleCurrencyChange} ></lightning-combobox> 
+</div>    
+</div>
+</div>
+    </div> 
+<div class="slds-col slds-size_1-of-3">
+  
+<div style="margin-bottom:50px;"></div>
+<p style="text-decoration: underline;padding-left:40px;"><lightning-formatted-text value="Email salesforce.com" ></lightning-formatted-text></p>
+</div>
+</div>
+
+
+<!--PLEXOS CLoud PLATFORM -->
+<div style="padding-bottom:20px"></div>
+<div class="slds-grid slds-gutters">
+  <div class="slds-col slds-size_2-of-3">
+    <div class="PLEXOSCLoudborder"> 
+      <p style="padding-left: 2px; text-align:left" >PLEXOS CLOUD 
+      </p>
+<div class="input-container"> 
+  <lightning-checkbox-group name="Checkbox Group" class="plexosclod"
+                            label=""
+                            options={plexosclod}
+                            value={value}
+                            onchange={handleChange}></lightning-checkbox-group>
+
+  
+    
+       <div class="input-label b readonlyusers">Read Only Users</div>
+       <div class="input-wrapper ">
+<lightning-combobox
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={AdditionalCores}
+  onchange={handleChange} ></lightning-combobox>
+  
+
+  </div>
+  </div>
+   <div class="input-container">
+<div style="padding-left:170px"> </div>
+         <div class="input-label b reportviewusers">Report Viewer Users</div>
+           <div style="padding-left:20px"></div>
+       <div class="input-wrapper ">
+       
+<lightning-combobox class="reportviewuserscombobox"
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={AdditionalCores}
+  onchange={handleChange} ></lightning-combobox>
+  </div>
+    </div> 
+<div class="padding-bottom:10px"></div>
+    <div class="PLEXOSCLoudPLATFORMborder"> 
+      <p style="padding-left: 2px; text-align:left" >PLEXOS CLOUD PLATFORM
+      </p>
+     <div class="input-container"> 
+    <div class="input-label b ">Storage (TB)</div>
+    <div class="input-wrapper ">
+<lightning-combobox
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={storage}
+  onchange={handleChange} ></lightning-combobox>
+  </div>
+  
+  
+<div class="input-label b ">Base cloud</div>
+    <div class="input-wrapper">
+<lightning-combobox
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={AdditionalCores}
+  onchange={basechange}> </lightning-combobox>
+
+
+</div>
+ </div> 
+  
+  
+<div class="input-container">
+<div class="input-label b ">Burst Cores</div>
+    <div class="input-wrapper">
+<lightning-combobox 
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={AdditionalCores}
+  onchange={basechange}> </lightning-combobox>
+
+</div>
+
+<div class="input-label b ">Burst</div>
+    <div class="input-wrapper">
+<lightning-combobox
+  name="progress"
+  label=""
+  value={value}
+  placeholder="Select Progress"
+  options={AdditionalCores}
+  onchange={basechange}> </lightning-combobox>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="slds-col slds-size_1-of-3">
+<div style="margin-bottom:100px;"></div>
+<p style="text-decoration: underline;padding-left:40px;"><lightning-formatted-text value="Email" ></lightning-formatted-text></p>
+<div style="margin-bottom:100px;"></div>
+<p style="text-decoration: underline;padding-left:40px;"><lightning-formatted-text value="Email salesforce.com" ></lightning-formatted-text></p>
+</div>
+</div>
+<div style="padding-bottom:20px"></div>
+<div class="slds-grid slds-gutters">
+  <div class="slds-col slds-size_2-of-3">
+    
+    
+    <div class="services"> 
+      <p style="padding-left: 2px; text-align:left" >Service</p>
+      </div>
+
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <div style="margin-bottom:30px;"></div>
+      <lightning-input type="text" style="padding-left:40px;" variant="standard" name="name" label="" value="-" read-only="true" placeholder="type here..."></lightning-input>
+    </div>
+    </div>
+
+</template>

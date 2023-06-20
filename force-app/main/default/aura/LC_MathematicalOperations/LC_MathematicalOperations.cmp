@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute type="integer" name="FirstNumber"/>
+    <aura:attribute type="integer" Name="LastName"/>
+    
+    <b><u>Mathematicaloperations</u></b>
+    Addition....={!v.FirstNumber + v.LastName}<br/>
+    Subtarction...={!v.FirstNumber - v.LastName}<br/>
+    Multiplication ...={!v.FirstNumber * v.LastName}<br/>
+    Division.......={!v.FirstNumber / v.LastName}<br/>
+    
+</aura:component>

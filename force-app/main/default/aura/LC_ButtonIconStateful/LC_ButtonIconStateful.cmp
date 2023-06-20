@@ -1,0 +1,5 @@
+<aura:component >
+    <lightning:buttoniconstateful title="Buttonliked" variant="border-filled" iconName="utility:like" alternativeText="Likebuttontext"/>
+    <lightning:buttoniconstateful title="Buttonliked" variant="border-filled" iconName="utility:answer" alternativeText="Likebuttontext"/>
+                                  
+</aura:component>

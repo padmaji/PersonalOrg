@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="List of Account records">
+        <template if:true={acc.data}>
+        <template for:each={acc.data} for:item="ac">
+            <p key={ac.id}> My account name is {ac.Name} --->phone is 
+                {ac.phone} ----->fax is {ac.fax}----->industry is {ac.Industry}
+            </p>
+        </template>
+    </template>
+    <template if:true={acc.error}>
+        <b>Sorry we are unable to display the data</b>
+    </template>
+
+    </lightning-card>
+    <lightning-card title="Display the data in datatbale format">
+        <template if:true={acc.data}>
+
+            <lightning-datatable key-field="id"  data={acc.data} columns={colm}></lightning-datatable> 
+
+        </template>
+        <template if:true={acc.error}>
+            <b>Sorrry we are unbale to display the table data</b>
+        </template>
+    </lightning-card>
+</template>

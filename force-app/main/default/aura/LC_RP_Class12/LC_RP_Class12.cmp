@@ -1,0 +1,25 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <!--<aura:attribute name="acc" type="Account"/>
+    <aura:attribute name="myaccRec" type="Account"/>
+    <aura:handler name="init" value="{!this}" action="{!c.initila}"/>
+    <lightning:card title="force recordDataa">
+        <force:recordData aura:id="md" fields="Name,Industry,Rating" recordID="{!v.recordId}" targetFields="{!v.acc}" targetRecord="{!v.myaccRec}"/> 
+        <lightning:input label="Enetr Name" value="{!v.acc.Name}"/>
+        <lightning:input label="Enetr Industry" value="{!v.acc.Industry}"/>
+        <lightning:input label="Enetr Rating" value="{!v.acc.Rating}"/>
+        
+        <lightning:button label="clickme" onclick="{!c.Clikme}"/>
+        
+    </lightning:card>-->
+    <aura:attribute name="flag" type="boolean" default="false"/>
+    <lightning:card title="button">
+        <lightning:button label="clickme" onclick="{!c.clickme}"/>
+    {!v.body}
+    </lightning:card>
+    
+    
+    
+    
+    
+    
+</aura:component>

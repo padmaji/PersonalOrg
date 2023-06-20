@@ -1,0 +1,12 @@
+<aura:component  controller="LGetAccountRecordsController">
+    <aura:attribute name="lstofAccountRecords" type="Account[]" />
+    <aura:attribute name="lstofColumns" type="List" />
+    <aura:attribute name="countpfselectedrecords" type="Integer" default="0"/>
+    <aura:handler name="init" value="{!this}" action="{!c.fetchAllAccounts}"/>
+    <div>
+   <h1> selectedRecords....:{!v.countpfselectedrecords}</h1><br/>
+        
+    <lightning:datatable keyField="id" columns="{!v.lstofColumns}" data="{!v.lstofAccountRecords}" onrowselection ="{!c.CountofselectedRecords}">
+        </lightning:datatable>
+        </div>
+</aura:component>

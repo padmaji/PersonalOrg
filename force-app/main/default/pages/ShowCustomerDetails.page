@@ -1,0 +1,11 @@
+<apex:page setup="true" sidebar="true" tabStyle="Position__c" showHeader="true" controller="ShowCustomerDetailsController" action="{!ShowValues}">
+
+  Customer Code is....: {!customerCode} <br/>
+      Customer Name is....: {! customerName} <br/>
+      Contact Number is...: {! contactNumber} <br/>
+      Email Address is....: {! emailAddress} <br/>
+      Contact Address is..: {! contactAddress} <br/>
+      Balance Amount is...: {! balanceAmount} <br/>
+      Birth Date is.......: {! birthDate} <br/>
+      Active Status is....: {! isActive}
+</apex:page>

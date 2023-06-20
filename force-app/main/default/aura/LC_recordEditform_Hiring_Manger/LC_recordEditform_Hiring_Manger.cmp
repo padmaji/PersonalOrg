@@ -1,0 +1,26 @@
+<aura:component implements="lightning:actionOverride" >
+	<div>
+    <lightning:recordEditForm objectApiName="Hiring_Manager__c">
+        <lightning:accordion>
+        <lightning:accordionSection label="PersonalInfo">
+            <lightning:inputField fieldName="Name" required="true"/>
+            <lightning:inputField fieldName="Location__c"/>
+                
+            
+            </lightning:accordionSection>
+            <lightning:accordionSection label="ContactInfo">
+            <lightning:inputfield fieldName="ContactNumber__c">
+             </lightning:inputfield>
+                <lightning:inputField fieldName="Email_Address__c"/>
+            </lightning:accordionSection>
+            <lightning:accordionSection label="Designation">
+                <lightning:inputfield  fieldName="Designation__c"/>
+            </lightning:accordionSection>
+        </lightning:accordion>
+         <p align="right">  
+                <lightning:button variant="brand" type="submit" label="Save Record"/>
+            </p> <br/>
+        
+        </lightning:recordEditForm>
+    </div>
+</aura:component>

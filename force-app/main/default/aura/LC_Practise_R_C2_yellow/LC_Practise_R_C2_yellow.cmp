@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:handler name="firsty" event="c:LE_Practise_R" action="{!c.HandleMe}"/>
+    
+    <lightning:card title="Event">
+    
+    This is c2 yellow compoennet i want to listen the event
+    </lightning:card>
+    <c:LC_Practise_R_C21_blue />
+</aura:component>

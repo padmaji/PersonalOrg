@@ -1,0 +1,182 @@
+/* .wrapper {
+    padding-left: 5px;
+}
+.wrapper > span {
+    font-family: "Salesforce Sans",Arial,sans-serif;
+    color: #3e3e3c;
+    font-size: .75rem;
+    padding-right: 10px;
+}
+.input-wrapper {
+    display: inline-block;
+    max-width: 50%;
+    margin-bottom: .75rem;
+}*/
+.b{
+	display: inline-block;
+  width: 100px;
+  text-align: right;
+  
+}
+
+ 
+
+ .input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-label {
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+}
+
+.input-wrapper lightning-input {
+  flex-grow: 1;
+}
+.labelColour{
+    --lwc-colorTextLabel:black;
+
+}
+/* .tbody {
+        border-top: 25px;
+    } */
+
+.tbody{
+  margin-bottom: 30px;
+}
+
+.tld{
+  margin-bottom: 130px;
+}
+
+.marginleft{
+  
+      white-space: pre;
+      word-spacing: 30px;
+    
+}
+.marginval{
+  
+      white-space: pre;
+      word-spacing: 20px;
+    
+}
+.firstyear{
+  margin-bottom: 250px;
+}
+
+.radioborder{
+  position: relative;
+            padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             padding-right: 20px;
+           
+             width: 200px;
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+
+.radio_border{
+  /* width: 100px;
+  height: 130px;
+  border: 1px solid darkgray;
+  /* border-style: outset; */
+
+  /* margin: 20px;  */
+  position: relative;
+  padding-top: 10px; /* Adjust as needed */
+             padding-left: 20px; 
+             width: 150px;
+             height: 150px;
+           
+            border-left: 1px solid darkgray;; /* Left border */
+            border-right: 1px solid darkgray;; /* Right border */
+            border-bottom: 1px solid darkgray;; /* Bottom border */
+}
+.italicfont{
+  font-size: 10px;
+  font-style: italic;
+}
+PLEXOSAnalyst
+{
+  margin-bottom: 10px;
+
+  text-align: right;
+  
+  }  
+  .allfont{
+    font-size: 11Px;
+  }
+  .lineover{
+    width:50px;
+    text-decoration: overline;
+    text-align: right;
+   
+  }
+  ._bold
+  {
+    font-weight: bold;
+  }
+  .valuesmargin{
+margin-bottom:20px;
+  }
+.radioborder_full
+{
+   width: 500px;
+  border: 1px solid black;
+  border-style: outset;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+   
+}
+.radioborder::before {
+  content: "";
+            position: absolute;
+           border-collapse: separate;
+  border-spacing: 15px;
+            top: 0;
+            left: 0;
+            padding-right: 10px;
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+
+.radioborder::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+           padding-right: 10px;
+            left: 0;
+            width: 50%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}
+
+.radio_border::before {
+  content: "";
+            position: absolute;
+    
+            top: 0;
+            left: 0;
+           
+            width: 100%;
+            height: 1px;
+            background-color: darkgray;
+}
+  .radio_border::after {
+   content: "";
+            position: absolute;
+            top: 0;
+           
+          
+            left: 0;
+            width: 50%; /* Adjust to change the width of the partial border */
+            height: 1px;
+            background-color: #fff; /* Background color to "hide" the partial portion */
+}

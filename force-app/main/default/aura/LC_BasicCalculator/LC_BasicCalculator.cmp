@@ -1,0 +1,19 @@
+<aura:component >
+    <lightning:input type="number" label="Enter First Number" placeholder="FirstNumber" aura:id="fnumber"/>
+    <lightning:input type="number" label="Enter Second Number" placeholder="SecondNumber" aura:id="snumber"/>
+    <lightning:input type="number" label="Result is" placeholder="Result is " aura:id="Resultouput"/>
+    
+    
+    
+    <p>
+    <lightning:buttongroup>
+        <lightning:button  label="Addition" variant="brand" onclick="{!c.Addition}" /> &nbsp;
+        <lightning:button  label="Multiply" variant="brand" onclick="{!c.Multiply}" /> &nbsp;
+        <lightning:button  label="Division" variant="brand" onclick="{!c.Division}" /> &nbsp;
+        <lightning:button  label="Subtarction" variant="brand" onclick="{!c.subtarct}" /> &nbsp;
+        <lightning:button  label="Rest" variant="brand" onclick="{!c.clear}" /> &nbsp;
+        </lightning:buttongroup>
+    </p>
+    
+     
+</aura:component>

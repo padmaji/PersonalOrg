@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:registerEvent name="firsty" type="c:LE_Practise_R" />
+    
+    <aura:handler Event="c:LE_Practise_R" name="firsty" action="{!c.HadnleMe}" />
+    <lightning:card title="Event component">
+    This is C11 blue
+        <lightning:button label="Click me" onclick="{!c.ClickMe}" />
+    </lightning:card>
+    
+</aura:component>

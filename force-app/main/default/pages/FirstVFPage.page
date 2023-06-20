@@ -1,0 +1,4 @@
+<apex:page setup="false" sidebar="true" tabStyle="Account" showHeader="true" >
+
+  <b> Welcome to salesforce </b>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page setup="false" sidebar="false" showHeader="true" tabStyle="Recruiter__c">
+<apex:sectionHeader title="Address" subtitle="Contact info"  />
+<Apex:form >
+<apex:pageBlock title="contact Details">
+<apex:pageBlock title="opportunity details"> </apex:pageBlock>
+</apex:pageBlock>
+<apex:pageBlock title="order details"> </apex:pageBlock>
+</Apex:form>
+</apex:page>

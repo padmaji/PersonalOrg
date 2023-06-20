@@ -1,0 +1,18 @@
+<aura:component >
+    <div style="width : 30% ;float;left;padding:10px;border:2px solid black;" >
+	<lightning:accordion title="Input section">
+    <lightning:input type="text" label="Firstname" placeholder="First Name"></lightning:input>
+    </lightning:accordion>
+        </div>
+    <div style="width : 30% ;float;left;padding:10px;border:2px solid black;">
+    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" scrollDuration="5">
+        <lightning:carouselImage src="{!$Resource.Youtube_Image}"
+                                href="www.youtube.com">
+        </lightning:carouselImage> 
+        <lightning:carouselImage src="{!$Resource.Youtube_Image}"
+                                href="www.youtube.com">
+        
+        </lightning:carouselImage>
+    </lightning:carousel>
+        </div>
+</aura:component>

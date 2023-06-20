@@ -1,0 +1,25 @@
+<apex:page standardController="Account" sidebar="false" setup="false" tabStyle="Recruiter__c"  >
+<apex:sectionHeader title="AccountEdit" subtitle="NewAccountRecord"/>
+<apex:form >
+<apex:pageBlock title="AccountBlock">
+<apex:pageBlockSection title="Account information">
+<apex:inputField value="{!Account.Name}"/>
+<apex:inputfield value="{!Account.Parentid}"/>
+<apex:inputField value="{!Account.Rating}" required="true"/>
+<apex:inputField value="{!Account.industry}"/>
+<apex:inputfield value="{!Account.phone}"/>
+<apex:inputField value="{!Account.fax}"/>
+<apex:inputField value="{!Account.AnnualRevenue}" required="true"/>
+<apex:inputField value="{!Account.type}"/>
+<apex:inputField value="{!Account.Ownership}"/>
+<apex:inputField value="{!Account.PAN_Number__c}"/>
+</apex:pageBlockSection>
+<apex:pageBlockSection title="Additionalinfo">
+
+
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+
+  
+</apex:page>

@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="LWC-Update with LDS">
+        <lightning-input label="Enter the text here" onchange={onChange} ></lightning-input>
+        <lightning-datatable key-field="Id" data={res.data} columns={column} draft-values={newval}
+        onsave={savingrec}></lightning-datatable>
+        </lightning-card>
+</template>
